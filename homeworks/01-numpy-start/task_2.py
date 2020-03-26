@@ -10,7 +10,7 @@ def generate_zero_matrix():
     # В строках ниже нужно присвоить переменной matrix нужное значение
 
     # НАЧАЛО ЗАДАНИЯ
-
+    matrix = np.zeros((3, 5), dtype=int)
     # КОНЕЦ ЗАДАНИЯ
 
     return matrix

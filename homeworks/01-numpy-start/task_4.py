@@ -10,7 +10,7 @@ def transpose_matrix(A):
     # В строках ниже нужно присвоить корректное значение переменной A_transposed
 
     # НАЧАЛО ЗАДАНИЯ
-
+    A_transposed = A.T
     # КОНЕЦ ЗАДАНИЯ
 
     return A_transposed

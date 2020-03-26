@@ -12,7 +12,13 @@ def multiply_matrices(A, B):
     # В строках ниже нужно присвоить корректное значение переменной result
 
     # НАЧАЛО ЗАДАНИЯ
+    dimsA = A.shape
+    dimsB = B.shape
 
+    if dimsA[1] != dimsB[0]:
+        return 'Invalid matrix shape!'
+
+    result = np.dot(A, B)
     # КОНЕЦ ЗАДАНИЯ
 
     return result

@@ -11,7 +11,10 @@ def calculate_matrix_shape(A):
     # В строках ниже нужно корректно сформировать словарь matrix_shape
 
     # НАЧАЛО ЗАДАНИЯ
+    dimensions = A.shape
 
+    matrix_shape['rows'] = dimensions[0]
+    matrix_shape['cols'] = dimensions[1]
     # КОНЕЦ ЗАДАНИЯ
 
     return matrix_shape
