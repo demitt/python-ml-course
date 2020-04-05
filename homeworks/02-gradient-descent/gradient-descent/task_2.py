@@ -10,6 +10,8 @@ def df(x):
 
     # НАЧАЛО ЗАДАНИЯ
 
+    value = 2 * x - 3
+
     # КОНЕЦ ЗАДАНИЯ
 
     return value

@@ -12,6 +12,9 @@ def df(x1, x2):
 
     # НАЧАЛО ЗАДАНИЯ
 
+    df_x1 = 2 * x1 - 4
+    df_x2 = 2 * x2 + 5
+
     # КОНЕЦ ЗАДАНИЯ
 
     return np.array([[df_x1, df_x2]])
