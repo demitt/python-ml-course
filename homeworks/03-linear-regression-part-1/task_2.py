@@ -15,7 +15,10 @@ def cost(X, Y, W, b):
     value = 0
 
     # НАЧАЛО ЗАДАНИЯ
-    # ...
+
+    delta = h(X, W, b) - Y
+    value_as_matrix = 0.5 / m * np.dot(delta, delta.T)
+    value = value_as_matrix[0, 0]
 
     # КОНЕЦ ЗАДАНИЯ
 

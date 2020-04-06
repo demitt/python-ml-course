@@ -16,7 +16,13 @@ def cost_gradients(X, Y, W, b):
     grad_b = None
 
     # НАЧАЛО ЗАДАНИЯ
-    # ...
+
+    delta = h(X, W, b) - Y
+
+    grads_W = np.dot(delta, X.T) / m
+
+    grad_b_as_scalar = np.sum(delta) / m
+    grad_b = np.array([[grad_b_as_scalar]])
 
     # КОНЕЦ ЗАДАНИЯ
 

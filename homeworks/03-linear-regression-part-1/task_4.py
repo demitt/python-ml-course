@@ -18,7 +18,13 @@ def minimize_cost(X, Y, alpha, N_iter):
 
     for iteration in range(N_iter):
         # НАЧАЛО ЗАДАНИЯ
-        # ...
+
+        gradients = cost_gradients(X, Y, W, b)
+        W_new = W - alpha * gradients['W']
+        b_new = b - alpha * gradients['b']
+
+        W = W_new
+        b = b_new
 
         # КОНЕЦ ЗАДАНИЯ
 
