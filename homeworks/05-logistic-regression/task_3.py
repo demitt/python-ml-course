@@ -16,7 +16,10 @@ def cost(X, Y, W, b):
     value = 0
 
     # НАЧАЛО ЗАДАНИЯ
-    # ...
+
+    hypothesis = h(X, W, b)
+    value_as_matrix = (- np.dot(Y, np.log(hypothesis.T)) - np.dot((1 - Y), np.log(1 - hypothesis.T))) / m
+    value = value_as_matrix[0, 0]
 
     # КОНЕЦ ЗАДАНИЯ
 

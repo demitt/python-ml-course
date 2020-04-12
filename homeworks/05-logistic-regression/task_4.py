@@ -18,6 +18,10 @@ def cost_gradients(X, Y, W, b):
 
     # НАЧАЛО ЗАДАНИЯ
 
+    delta = h(X, W, b) - Y
+    grads_W = np.dot(delta, X.T) / m
+    grad_b = np.sum(delta) / m
+
     # КОНЕЦ ЗАДАНИЯ
 
     return dict(W=grads_W, b=grad_b)

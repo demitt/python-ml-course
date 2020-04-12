@@ -12,7 +12,8 @@ def h(X, W, b):
     value = 0
 
     # НАЧАЛО ЗАДАНИЯ
-    # ...
+
+    value = sigmoid(np.dot(W, X) + b)
 
     # КОНЕЦ ЗАДАНИЯ
 
