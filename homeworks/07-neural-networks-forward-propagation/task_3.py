@@ -15,7 +15,10 @@ def cost(X, Y, W1, b1, W2, b2):
     value = 0
 
     # НАЧАЛО ЗАДАНИЯ
-    # ...
+
+    fp_tr = forward_propagation(X, W1, b1, W2, b2)['l2'].T
+    value_as_matrix = (- np.dot(Y, np.log(fp_tr)) - np.dot((1 - Y), np.log(1 - fp_tr))) / m
+    value = value_as_matrix[0, 0]
 
     # КОНЕЦ ЗАДАНИЯ
 

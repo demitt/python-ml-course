@@ -18,7 +18,12 @@ def forward_propagation(X, W1, b1, W2, b2):
     result = dict(l1=None, l2=None)
 
     # НАЧАЛО ЗАДАНИЯ
-    # ...
+
+    a1 = sigmoid(np.dot(W1, X) + b1)
+    result = dict(
+        l1=a1,
+        l2=sigmoid(np.dot(W2, a1) + b2)
+    )
 
     # КОНЕЦ ЗАДАНИЯ
 
